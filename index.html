@@ -1,125 +1,226 @@
+<!doctype html><html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sravan Dasari — Senior Java & Angular Developer</title>
+<meta name="description" content="Sravan Dasari — Senior Software Engineer specializing in Java, Angular, Spring Boot, Microservices, REST/SOAP APIs, Oracle, and Tableau. Based in India.">
+<meta name="keywords" content="Sravan Dasari, Java Developer, Angular, Spring Boot, Microservices, Oracle, REST, SOAP, Jenkins, SonarQube, Tableau, India">
+<meta property="og:title" content="Sravan Dasari — Portfolio">
+<meta property="og:description" content="Senior Java & Angular Developer · Spring Boot · Microservices · Oracle · Tableau">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/profile.svg">
+<meta name="theme-color" content="#0a192f">
+<style>
+:root{--bg:#ffffff;--text:#0a192f;--muted:#44546b;--primary:#0a192f;--accent:#64ffda;--card:#f5f7fb;--border:#e6edf5}
+body.dark{--bg:#0a192f;--text:#e6f1ff;--muted:#a8b2d1;--primary:#0a192f;--accent:#64ffda;--card:#0f213f;--border:#1d3557}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:var(--bg);color:var(--text);scroll-behavior:smooth}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+h1,h2,h3{margin:0 0 10px}h2{font-size:28px;border-bottom:2px solid var(--accent);display:inline-block;padding-bottom:6px}
+.small{font-size:14px;color:var(--muted)}
+a{color:var(--text)}a.btn{display:inline-block;border:1px solid var(--accent);padding:10px 14px;border-radius:10px;text-decoration:none;transition:transform .15s,background .15s,color .15s}
+.btn{cursor:pointer;border:1px solid var(--accent);background:transparent;color:var(--text);padding:10px 14px;border-radius:10px}
+.btn.primary{background:var(--accent);color:#00343a;border-color:var(--accent);font-weight:600}
+a.btn:hover,.btn:hover{transform:translateY(-2px)}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.badge{background:var(--card);border:1px solid var(--border);padding:8px 10px;border-radius:999px;font-size:13px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px}
+.grid{display:grid;gap:20px}.cols-2{grid-template-columns:1.1fr .9fr}
+@media(max-width:900px){.cols-2{grid-template-columns:1fr}}
+.sep{border:0;height:1px;background:var(--border);margin:12px 0}
+.kv{display:grid;grid-template-columns:140px 1fr;gap:8px}.kv>div:first-child{color:var(--muted)}
+.timeline{display:grid;gap:18px}
+.tl-item{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
+.hero{background:var(--primary);color:#e6f1ff;padding:70px 0}
+.hero .title{font-size:42px;line-height:1.15;margin-bottom:6px}
+.hero .subtitle{font-size:20px;color:#c2d1ff}
+.hero .accent{color:var(--accent)}
+.hero img{max-width:240px;height:auto}
+nav{position:sticky;top:0;z-index:999;background:rgba(255,255,255,.8);backdrop-filter:blur(6px);border-bottom:1px solid var(--border)}
+body.dark nav{background:rgba(10,25,47,.7)}
+nav .inner{display:flex;align-items:center;justify-content:space-between;height:56px}
+nav a{color:var(--text);text-decoration:none;margin:0 10px}
+nav .brand{font-weight:800;letter-spacing:.3px}
+section{padding:56px 0}
+footer{border-top:1px solid var(--border);padding:18px 0;color:var(--muted)}
+.fade-in{opacity:0;transform:translateY(12px);animation:fade .6s ease forwards}
+.fade-in:nth-child(1){animation-delay:.05s}.fade-in:nth-child(2){animation-delay:.1s}.fade-in:nth-child(3){animation-delay:.15s}
+@keyframes fade{to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="container inner">
+  <div><a class="brand" href="#home">Sravan<span class="accent">.</span>Dasari</a></div>
+  <div class="right">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <a class="btn" href="assets/Branded_CV_Shravan_Dasari.pdf" download>Download CV</a>
+    <button class="btn" id="pdfBtn">Export PDF</button>
+    <button class="btn" id="themeBtn" aria-label="Toggle theme">Toggle Theme</button>
+  </div>
+</div></nav>
 
-<!doctype html><html lang='en'><head>
-<meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1'/>
-<title>Sravan S. Dasari — Portfolio</title>
-<meta name='description' content='Senior Java & Angular Developer specializing in Spring Boot, Microservices, REST/SOAP APIs, and Tableau.'/>
-<meta name='keywords' content='Java, Angular, Spring Boot, Microservices, REST, SOAP, Tableau, Oracle, Kafka, Jenkins, SonarQube, PL/SQL'/>
-<meta property='og:title' content='Sravan S. Dasari — Portfolio'/>
-<meta property='og:description' content='Senior Java & Angular Developer · Spring Boot · Microservices · Tableau'/>
-<link rel='stylesheet' href='styles.css'/></head><body>
-<nav><div class='container inner'><div><a href='#home'><strong>Sravan</strong></a></div>
-<div class='right'><a href='#about'>About</a><a href='#skills'>Skills</a><a href='#projects'>Projects</a><a href='#experience'>Experience</a><a href='#contact'>Contact</a>
-<a class='btn' href='assets/Branded_CV_Shravan_Dasari.pdf' download>Download CV</a><button class='btn' onclick='exportPDF()'>Export as PDF</button><button class='btn' data-toggle-theme>Toggle Theme</button></div></div></nav>
-
-<section id='home' class='hero container'><div>
-<h1>Sravan S. Dasari</h1><h2>Senior Java & Angular Developer</h2>
-<div class='tagline'>Loading…</div>
-<div class='badges'><span class='badge'>Spring Boot</span><span class='badge'>Microservices</span><span class='badge'>REST/SOAP APIs</span><span class='badge'>Tableau</span></div>
-<div style='margin-top:20px;display:flex;gap:12px;flex-wrap:wrap'><a class='btn primary' href='assets/Branded_CV_Shravan_Dasari.pdf' download>Download CV</a><a class='btn' href='#projects'>View Projects</a></div>
-</div><div style='display:flex;justify-content:center'><img src='assets/profile.svg' alt='Profile placeholder'/></div></section>
-
-<section id='about'><div class='container grid cols-2'><div><h2>About</h2><p>Software Engineer with 9+ years of experience specializing in Java, Angular, and enterprise application development. Skilled in building scalable, high-performance web solutions using Spring Boot, Microservices, REST/SOAP APIs, and modern frontend frameworks.</p><p>Proven expertise in backend integration, performance optimization, and delivering robust applications in Agile/Scrum environments. Experienced in Tableau for creating interactive dashboards and data visualizations to support business decision-making. Strong domain experience in financial and insurance systems, including policy management, claims processing, and data transformation.</p><p>Adept at collaborating with cross-functional teams, leading development efforts, and mentoring junior developers. Passionate about learning new technologies and solving complex problems with clean, efficient code.</p></div>
-<div class='card'><h3>Quick Facts</h3>
-<div class='kv' style='margin-top:10px'><div>Location</div><div>Surat, Gujarat, India</div></div>
-<div class='kv' style='margin-top:6px'><div>Total Experience</div><div>9+ years</div></div>
-<div class='kv' style='margin-top:6px'><div>Domains</div><div>Finance, Insurance</div></div>
-<div class='kv' style='margin-top:6px'><div>Highlights</div><div>10+ REST/SOAP services • Agile/Scrum • Team mentoring</div></div>
-</div></div></section>
-
-<section id='skills'>
-  <div class='container'>
-    <h2>Skills</h2>
-
-    <h3>Programming Languages</h3>
-    <div class='badges'>
-      <span class='badge'>Java 8/11</span><span class='badge'>Core Java</span>
-      <span class='badge'>J2EE</span><span class='badge'>C</span>
-      <span class='badge'>C++</span><span class='badge'>PL/SQL</span>
-      <span class='badge'>TypeScript</span><span class='badge'>JavaScript</span>
-      <span class='badge'>HTML5</span><span class='badge'>CSS3</span>
+<section id="home" class="hero">
+  <div class="container grid cols-2">
+    <div class="fade-in">
+      <h1 class="title">Hi, I'm <span class="accent">Sravan Dasari</span></h1>
+      <div class="subtitle">Senior Software Engineer — Java & Angular</div>
+      <div class="small" id="tagline" style="margin-top:8px">Spring Boot • Microservices • REST/SOAP • Oracle • Tableau</div>
+      <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="mailto:sravan.dasari.s@gmail.com">Contact Me</a>
+      </div>
     </div>
-
-    <h3>Frameworks & Libraries</h3>
-    <div class='badges'>
-      <span class='badge'>Spring Boot</span><span class='badge'>Spring MVC</span>
-      <span class='badge'>Microservices</span><span class='badge'>REST API</span>
-      <span class='badge'>SOAP Web Services</span><span class='badge'>Angular 8+</span>
-    </div>
-
-    <h3>Databases</h3>
-    <div class='badges'>
-      <span class='badge'>Oracle</span><span class='badge'>MySQL</span>
-      <span class='badge'>SQLite</span>
-    </div>
-
-    <h3>Tools & Platforms</h3>
-    <div class='badges'>
-      <span class='badge'>Git</span><span class='badge'>Bitbucket</span>
-      <span class='badge'>Jenkins</span><span class='badge'>SonarQube</span>
-      <span class='badge'>Swagger</span><span class='badge'>Kafka</span>
-      <span class='badge'>Tableau</span><span class='badge'>UNIX Shell Scripting</span>
-      <span class='badge'>Apache Tomcat</span><span class='badge'>JBoss EAP</span>
-    </div>
-
-    <h3>Methodologies & Other Skills</h3>
-    <div class='badges'>
-      <span class='badge'>Agile/Scrum</span><span class='badge'>Waterfall</span>
-      <span class='badge'>API Development</span><span class='badge'>Performance Optimization</span>
-      <span class='badge'>Problem Solving</span>
+    <div class="fade-in" style="display:flex;justify-content:center;align-items:center">
+      <img src="assets/profile.svg" alt="Profile placeholder illustration"/>
     </div>
   </div>
 </section>
 
-<section id='projects'><div class='container'><h2>Projects</h2><div class='grid cols-2'>
-<div class='card'><h3>Data Transformation Engine (DTE) <span class='small'>— Bank of America</span></h3>
-<p class='small'>File transformation platform processing large-scale retirement plan data (401k, DB, NQ, ESPP) with real-time monitoring and alerting.</p>
-<hr class='sep'/><div class='kv'><div>Role</div><div>Software Engineer II — Designed REST APIs, optimized microservices, integrated Tableau dashboards; reduced incident resolution time by 30%.</div></div>
-<div class='kv' style='margin-top:8px'><div>Tech</div><div>Java 8, Spring Boot, Oracle 11g, Linux, Tableau</div></div></div>
-
-<div class='card'><h3>InsuranceTrax <span class='small'>— Finlogic Technologies</span></h3>
-<p class='small'>Web solution for offline/online policy transactions and document management.</p>
-<hr class='sep'/><div class='kv'><div>Role</div><div>Senior Executive Java Developer — Built policy modules, uploads, and plan comparison; implemented role-based access.</div></div>
-<div class='kv' style='margin-top:8px'><div>Tech</div><div>Java, Spring MVC, JSP, Servlets, MySQL</div></div></div>
-
-<div class='card'><h3>Broker Insurance Management System (BIMS) <span class='small'>— Finlogic Technologies</span></h3>
-<p class='small'>Broker platform for life and non-life insurance processing, plan comparison, scanning and uploads, and claims management.</p>
-<hr class='sep'/><div class='kv'><div>Role</div><div>Senior Executive Java Developer — Delivered transaction processing, claims features, and performance optimizations.</div></div>
-<div class='kv' style='margin-top:8px'><div>Tech</div><div>Java, Spring MVC, JSP, Servlets, MySQL</div></div></div>
-
-<div class='card'><h3>Android Apps (Summary) <span class='small'>— NightFox / Bosleo (Earlier)</span></h3>
-<p class='small'>Multiple Android apps with REST integration: location-based reminders, phone state management, and vehicle audit systems.</p>
-<hr class='sep'/><div class='kv'><div>Role</div><div>Junior Android Developer — Built features and integrations (kept concise per current focus).</div></div>
-<div class='kv' style='margin-top:8px'><div>Tech</div><div>Android, REST APIs</div></div></div>
-</div></div></section>
-
-<section id='experience'><div class='container'><h2>Experience</h2><div class='timeline'>
-<div class='tl-item'><h3>Software Engineer II — Bank of America</h3><div class='small'>Jul 2021 – Present</div>
-<ul><li>Lead development and enhancement of DTE for secure, scalable processing of retirement plan data.</li>
-<li>Built REST APIs and microservices using Java 8 & Spring Boot with Oracle 11g.</li>
-<li>Integrated Tableau dashboards for operational visibility.</li>
-<li>Enhanced monitoring/alerting to reduce incident resolution time by 30%.</li>
-<li>Worked in Agile/Scrum; mentored junior developers.</li></ul></div>
-
-<div class='tl-item'><h3>Assistant System Analyst — Tata Consultancy Services (via C-Edge)</h3><div class='small'>Jun 2019 – Mar 2021</div>
-<ul><li>Developed and maintained insurance applications with Java, Spring MVC, REST/SOAP services.</li>
-<li>Designed backend APIs for policy management, claims, and document workflows.</li>
-<li>Optimized SQL/PL-SQL for data processing efficiency.</li></ul></div>
-
-<div class='tl-item'><h3>Senior Executive Java Developer — Finlogic Technologies</h3><div class='small'>Apr 2016 – May 2019</div>
-<ul><li>Built insurance management systems with Spring MVC, JSP, Servlets, and MySQL.</li>
-<li>Implemented role-based authentication and performance improvements.</li>
-<li>Created reporting features for policy data.</li></ul></div>
-
-<div class='tl-item'><h3>Earlier Career</h3><div class='small'>2012 – 2014</div>
-<ul><li>Junior Android Developer — NightFox Technology (2012–2013).</li>
-<li>Software Developer — Bosleo Technologies (2013–2014).</li></ul></div>
-</div></div></section>
-
-<section id='contact'><div class='container'><h2>Contact</h2>
-<p class='small'>Email: <a href='mailto:sravan.dasari.s@gmail.com'>sravan.dasari.s@gmail.com</a> • Phone: <a href='tel:+91-8690861907'>+91-8690861907</a></p>
-<div style='margin-top:12px;display:flex;gap:12px;flex-wrap:wrap'><a class='btn primary' href='assets/Branded_CV_Shravan_Dasari.pdf' download>Download CV</a><button class='btn' onclick='exportPDF()'>Export Portfolio as PDF</button></div>
-<p class='small' style='margin-top:12px'></p>
+<section id="about"><div class="container grid cols-2">
+  <div class="fade-in">
+    <h2>About</h2>
+    <p>Results-driven Software Engineer with 7+ years of industry experience specializing in Java, Angular, and enterprise application development. Proven track record designing and deploying scalable web solutions using Spring Boot, Microservices, and REST/SOAP APIs.</p>
+    <p>Skilled at integrating enterprise systems, optimizing performance, and delivering high-quality software in Agile/Scrum environments. Experienced with Tableau dashboards for operational visibility in financial/insurance domains.</p>
+  </div>
+  <div class="card fade-in">
+    <h3 style="margin:0 0 8px">Quick Facts</h3><hr class="sep">
+    <div class="kv"><div>Location</div><div>Surat, Gujarat, India</div></div>
+    <div class="kv" style="margin-top:6px"><div>Total Experience</div><div>7+ years</div></div>
+    <div class="kv" style="margin-top:6px"><div>Domains</div><div>Finance, Insurance</div></div>
+    <div class="kv" style="margin-top:6px"><div>Highlights</div><div>10+ REST/SOAP services • Agile/Scrum • Mentoring</div></div>
+    <hr class="sep">
+    <div class="kv"><div>Email</div><div><a href="mailto:sravan.dasari.s@gmail.com">sravan.dasari.s@gmail.com</a></div></div>
+    <div class="kv" style="margin-top:6px"><div>Phone</div><div><a href="tel:+918690861907">+91-8690861907</a></div></div>
+  </div>
 </div></section>
 
-<footer class='footer'><div class='container small'>© Shravan S. Dasari — Built with HTML, CSS & JS • Light/Dark mode ready • SEO & ATS-friendly.</div></footer>
-<script src='script.js'></script></body></html>
+<section id="skills"><div class="container fade-in">
+  <h2>Skills</h2>
+
+  <h3>Programming Languages</h3>
+  <div class="badges">
+    <span class="badge">Java 8/11</span><span class="badge">Core Java</span><span class="badge">J2EE</span>
+    <span class="badge">C</span><span class="badge">C++</span><span class="badge">PL/SQL</span>
+    <span class="badge">TypeScript</span><span class="badge">JavaScript</span><span class="badge">HTML5</span><span class="badge">CSS3</span>
+  </div>
+
+  <h3 style="margin-top:18px">Frameworks & Libraries</h3>
+  <div class="badges">
+    <span class="badge">Spring Boot</span><span class="badge">Spring MVC</span><span class="badge">Microservices</span>
+    <span class="badge">REST API</span><span class="badge">SOAP Web Services</span><span class="badge">Angular 8+</span>
+  </div>
+
+  <h3 style="margin-top:18px">Databases</h3>
+  <div class="badges">
+    <span class="badge">Oracle</span><span class="badge">MySQL</span><span class="badge">SQLite</span>
+  </div>
+
+  <h3 style="margin-top:18px">Tools & Platforms</h3>
+  <div class="badges">
+    <span class="badge">Git</span><span class="badge">Bitbucket</span><span class="badge">Jenkins</span><span class="badge">SonarQube</span>
+    <span class="badge">Swagger</span><span class="badge">Kafka</span><span class="badge">Tableau</span><span class="badge">UNIX Shell Scripting</span>
+    <span class="badge">Apache Tomcat</span><span class="badge">JBoss EAP</span>
+  </div>
+
+  <h3 style="margin-top:18px">Methodologies & Other</h3>
+  <div class="badges">
+    <span class="badge">Agile/Scrum</span><span class="badge">Waterfall</span><span class="badge">API Development</span>
+    <span class="badge">Performance Optimization</span><span class="badge">Problem Solving</span>
+  </div>
+</div></section>
+
+<section id="projects"><div class="container">
+  <h2>Projects</h2>
+  <div class="grid cols-2">
+    <div class="card fade-in">
+      <h3>Data Transformation Engine (DTE) <span class="small">— Bank of America</span></h3>
+      <p class="small">File transformation platform for large-scale retirement plan data with real-time monitoring and alerting.</p><hr class="sep">
+      <div class="kv"><div>Role</div><div>Software Engineer II — REST APIs, microservices, Tableau integration; improved incident resolution by ~30%.</div></div>
+      <div class="kv" style="margin-top:8px"><div>Tech</div><div>Java 8, Spring Boot, Oracle 11g, Linux, Tableau</div></div>
+    </div>
+
+    <div class="card fade-in">
+      <h3>InsuranceTrax <span class="small">— Finlogic Technologies</span></h3>
+      <p class="small">Web solution for policy transactions and document management.</p><hr class="sep">
+      <div class="kv"><div>Role</div><div>Senior Executive Java Developer — Policy modules, uploads, comparison; role-based access.</div></div>
+      <div class="kv" style="margin-top:8px"><div>Tech</div><div>Java, Spring MVC, JSP, Servlets, MySQL</div></div>
+    </div>
+
+    <div class="card fade-in">
+      <h3>Broker Insurance Management System <span class="small">— Finlogic</span></h3>
+      <p class="small">Broker platform for life & non-life insurance processing, plan comparison, scanning/uploads, and claims.</p><hr class="sep">
+      <div class="kv"><div>Role</div><div>Senior Executive Java Developer — Transaction processing and performance improvements.</div></div>
+      <div class="kv" style="margin-top:8px"><div>Tech</div><div>Java, Spring MVC, JSP, Servlets, MySQL</div></div>
+    </div>
+
+    <div class="card fade-in">
+      <h3>Android Apps (Summary) <span class="small">— Earlier Career</span></h3>
+      <p class="small">Apps with REST integrations: location-based reminders, phone state management, vehicle audit systems.</p><hr class="sep">
+      <div class="kv"><div>Role</div><div>Junior Android Developer — Feature development & integrations.</div></div>
+      <div class="kv" style="margin-top:8px"><div>Tech</div><div>Android, REST APIs</div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="container">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="tl-item fade-in">
+      <h3>Software Engineer II — Bank of America</h3><div class="small">Jul 2021 – Present</div>
+      <ul>
+        <li>Lead development and enhancement of DTE for secure, scalable processing of retirement plan data.</li>
+        <li>Built REST APIs and microservices using Java 8 & Spring Boot with Oracle 11g.</li>
+        <li>Integrated Tableau dashboards for operational visibility; improved monitoring and alerting.</li>
+        <li>Enhanced incident resolution speed by ~30% through proactive alerting and automation.</li>
+        <li>Agile/Scrum contributor; mentored junior developers.</li>
+      </ul>
+    </div>
+
+    <div class="tl-item fade-in">
+      <h3>Assistant System Analyst — Tata Consultancy Services (via C-Edge)</h3><div class="small">Jun 2019 – Mar 2021</div>
+      <ul>
+        <li>Developed and maintained insurance applications with Java, Spring MVC, REST/SOAP services.</li>
+        <li>Designed backend APIs for policy management, claims, and document workflows.</li>
+        <li>Optimized SQL/PL/SQL for data processing efficiency.</li>
+      </ul>
+    </div>
+
+    <div class="tl-item fade-in">
+      <h3>Senior Executive Java Developer — Finlogic Technologies</h3><div class="small">Apr 2016 – May 2019</div>
+      <ul>
+        <li>Built insurance management systems with Spring MVC, JSP, Servlets, and MySQL.</li>
+        <li>Implemented role-based authentication and performance improvements.</li>
+        <li>Created reporting features for policy data.</li>
+      </ul>
+    </div>
+
+    <div class="tl-item fade-in">
+      <h3>Earlier Career</h3><div class="small">2012 – 2014</div>
+      <ul>
+        <li>Junior Android Developer — NightFox Technology (2012–2013).</li>
+        <li>Software Developer — Bosleo Technologies (2013–2014).</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="container">
+  <h2>Contact</h2>
+  <p class="small">📧 <a href="mailto:sravan.dasari.s@gmail.com">sravan.dasari.s@gmail.com</a> • 📞 <a href="tel:+918690861907">+91-8690861907</a></p>
+  <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+    <a class="btn primary" href="assets/Branded_CV_Shravan_Dasari.pdf" download>Download CV</a>
+    <a class="btn" href="#home">Back to Top</a>
+  </div>
+</div></section>
+
+<footer><div class="container small">© 2025 Sravan Dasari — Built with HTML, CSS & JS • Light/Dark mode • SEO-ready.</div></footer>
+
+<script>
+(function(){try{var s=localStorage.getItem("theme");if(s==="dark"){document.body.classList.add("dark")}}catch(e){};
+document.getElementById("themeBtn").onclick=function(){document.body.classList.toggle("dark");try{localStorage.setItem("theme",document.body.classList.contains("dark")?"dark":"light")}catch(e){}}})();
+document.getElementById("pdfBtn").onclick=function(){window.print()};
+(function(){var el=document.getElementById("tagline");if(!el)return;var msgs=["Spring Boot • Microservices • REST/SOAP • Oracle • Tableau","API Design • Performance Optimization • Agile/Scrum","Java • Angular • SQL/PL-SQL • Jenkins • SonarQube"];var i=0;setInterval(function(){i=(i+1)%msgs.length;el.textContent=msgs[i]},3000)})();
+var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("revealed");}})},{threshold:.12});
+document.querySelectorAll(".fade-in").forEach(function(el){obs.observe(el)});
+</script>
+</body></html>
